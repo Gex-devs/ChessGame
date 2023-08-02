@@ -20,4 +20,9 @@ public class ChessTile : MonoBehaviour
     {
         GetComponent<Renderer>().material.color = Color.yellow;
     }
+
+    public void RemoveHighlight()
+    {
+        GetComponent<Renderer>().material.color = new Color(255,255,255,98);
+    }
 }
